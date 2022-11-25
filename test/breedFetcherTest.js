@@ -20,7 +20,7 @@ describe('fetchBreedDescription', () => {
     fetchBreedDescription('google', (err, desc) => {
       const expectedDesc = 'Breed not found';
       assert.equal(err, expectedDesc);
-      assert.equal(desc, undefined);
+      assert.equal(desc, null);
       done();
     });
   });
